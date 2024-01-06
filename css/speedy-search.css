@@ -7,10 +7,13 @@
   font-size: 16px;
   border: none;
   outline: none;
-  /* padding: 14px 16px; */
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  width: 100%;
+}
+.dropbtn {
+  font-size: 16px;
   width: 100%;
 }
 
@@ -23,14 +26,19 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  right: -5%;
   background-color: #f9f9f9;
-  /* min-width: 50vw; */
   width: 50%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
+.share_bookmarks {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 80%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 .dropdown-content a {
   float: none;
   color: black;
@@ -66,7 +74,6 @@ c .dropdown-content a:hover {
 
 .simple_bookmarking li > button {
   background: transparent;
-  text-transform: lowercase;
   border: none;
 }
 .simple_bookmarking article div h3 {
@@ -83,4 +90,9 @@ c .dropdown-content a:hover {
   align-items: center;
   color: #fff;
   width: 40%;
+}
+.simple_bookmarking article div button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  color: #fff;
 }
