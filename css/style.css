@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+:root {
+  --Soft-Blue: hsl(231, 69%, 60%);
+  --Soft-Red: hsl(0, 94%, 66%);
+  --Grayish-Blue: hsl(229, 8%, 60%);
+  --Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+/* ---------------- */
+li {
+  list-style: none;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+}
+header {
+  padding: 0 60px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  padding: 0 60px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #060606;
+}
+
+header .navbar a {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+header .navbar a:hover {
+  border-top: 4px solid var(--Soft-Blue);
+}
+header .login-button {
+  width: 112px;
+  height: 40px;
+  background: var(--Soft-Red);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+header .login-button:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--Soft-Red);
+  color: var(--Soft-Red);
+  font-weight: 500;
+}
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 6px;
+}
+.social_media_nav {
+  display: none;
+}
+/* ------------------------------------------------------------ */
+.simple_bookmark {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 120px;
+  padding-right: 80px;
+  position: relative;
+}
+.simple_bookmark h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.sub_simple_bookmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.sub_simple_bookmark p {
+  width: 80%;
+  color: var(--Grayish-Blue);
+  padding: 40px 0;
+}
+.btn_chrome {
+  background: var(--Soft-Blue);
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+  background: var(--Soft-Blue);
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 40px;
+}
+.btn_chrome:hover {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--Soft-Blue);
+  background: transparent;
+  border: 2px solid var(--Soft-Blue);
+}
+.btn_firefox {
+  border: none;
+  box-shadow: 5px 5px 10px 0px rgba(158, 155, 155, 0.75);
+}
+.btn_firefox:hover {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--Soft-Blue);
+  background: transparent;
+  border: 2px solid var(--Very-Dark-Blue);
+  color: var(--Very-Dark-Blue);
+}
+.sub_simple_bookmark img {
+  display: block;
+  width: 100%;
+}
+.blue_bar_right {
+  width: 600px;
+  height: 300px;
+  background: var(--Soft-Blue);
+  border-bottom-left-radius: 150px;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: -1;
+}
+/* -----------------------Features------------------------------------- */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 0;
+}
+.features h2 {
+  font-weight: 500;
+}
+.features p {
+  width: 35%;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--Grayish-Blue);
+}
+.features ul li {
+  list-style: none;
+}
+.features ul li a {
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+}
+.features ul {
+  display: flex;
+  gap: 4rem;
+}
+.features ul {
+  border-bottom: 2px solid var(--Grayish-Blue);
+}
+
+.features ul li:first-child {
+  border-bottom: 4px solid var(--Soft-Red);
+  padding-bottom: 6px;
+}
+
+.features ul a:hover {
+  cursor: pointer;
+  color: var(--Soft-Red);
+}
+/* -----------------------------Bookmark in one click------------------------------- */
+.bookmark_click {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 120px;
+  position: relative;
+}
+
+.bookmark_click_image img {
+  display: block;
+  width: 100%;
+}
+.blue_bar_left {
+  width: 600px;
+  height: 300px;
+  background: var(--Soft-Blue);
+  border-bottom-right-radius: 150px;
+  position: absolute;
+  top: 40%;
+  left: -2%;
+  z-index: -1;
+}
+
+.sub_bookmark_click {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.sub_bookmark_click h2 {
+  font-weight: 500;
+}
+.sub_bookmark_click p {
+  width: 80%;
+  padding: 30px 0;
+  color: var(--Grayish-Blue);
+}
+
+/* -------------Download the extension-------------------------- */
+.download_extension {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 0;
+}
+.download_extension h2 {
+  font-weight: 500;
+}
+.download_extension p {
+  width: 35%;
+  text-align: center;
+  padding-top: 20px;
+  color: var(--Grayish-Blue);
+}
+/* ---------------------Install Extension---------------------- */
+.web_browsers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 15px;
+}
+.web_browsers article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  padding-top: 25px;
+  box-shadow: 5px 5px 10px 0px rgba(158, 155, 155, 0.75);
+}
+.web_browsers article h3 {
+  padding: 20px 0;
+  font-weight: 500;
+}
+.web_browsers article p {
+  color: var(--Grayish-Blue);
+  margin-bottom: 30px;
+}
+.web_browsers article img {
+  width: 40%;
+}
+.web_browsers button {
+  background: var(--Soft-Blue);
+  color: #fff;
+  width: 230px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+}
+.web_browsers button:hover {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--Soft-Blue);
+  background: transparent;
+  border: 2px solid var(--Soft-Blue);
+}
+.browser_btn {
+  padding: 25px;
+  border-top: 4px dotted var(--Grayish-Blue);
+}
+
+.web_browsers article:nth-child(2) {
+  margin-top: 4rem;
+}
+.web_browsers article:nth-child(3) {
+  margin-top: 8rem;
+}
+/* ------------------------------------------------------------ */
+.faq_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 60px 0px;
+}
+.faq_container p {
+  font-size: 0.75rem;
+  width: 60%;
+  text-align: center;
+  color: var(--Grayish-Blue);
+  padding: 0.5rem 0;
+}
+ul li {
+  list-style: none;
+}
+.faq_accordion_item {
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--Grayish-Blue);
+}
+
+.faq_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq_question:hover {
+  color: var(--Soft-Red);
+}
+.faq_answer {
+  color: var(--Grayish-Blue);
+}
+.hidden {
+  display: none;
+}
+.faq_question:hover {
+  cursor: pointer;
+}
+/* ------------------------------------------------------------ */
+.stay_up_to_date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Soft-Blue);
+  color: #fff;
+  height: 350px;
+}
+.stay_up_to_date > p {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.stay_up_to_date h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+  width: 45%;
+}
+
+/* ---------email validation----------- */
+
+form {
+  display: flex;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  padding: 25px 0;
+}
+
+#email-field {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 2px;
+  position: relative;
+  z-index: 10;
+}
+#email-error {
+  position: absolute;
+  left: 2px;
+  color: var(--Soft-Red);
+  font-size: 10px;
+}
+
+input[type="submit"] {
+  width: 112px;
+  height: 40px;
+  background: var(--Soft-Red);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid var(--Soft-Red);
+  color: var(--Soft-Red);
+  font-weight: 500;
+}
+input[type="email"] {
+  height: 40px;
+  border-radius: 4px;
+  padding: 0 16px;
+}
+input[type="email"]:hover {
+  border: 2px solid var(--Soft-Red);
+}
+.social_medias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 120px;
+  background: var(--Very-Dark-Blue);
+  height: 80px;
+}
+.social_medias div {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 3rem;
+}
+.social_medias a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.75rem;
+}
+.social_medias a:hover {
+  color: var(--Soft-Red);
+}
+.social_medias nav {
+  display: flex;
+  gap: 3rem;
+}
+.social_medias nav a:first-child {
+  background: #fff;
+  color: var(--Very-Dark-Blue);
+  width: 20px;
+  text-align: center;
+}
+
+.social_medias nav a:first-child:hover {
+  color: var(--Very-Dark-Blue);
+  background: var(--Soft-Red);
+}
+/* ------------------------------------------------------------ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ------------------------------------------------------------ */
