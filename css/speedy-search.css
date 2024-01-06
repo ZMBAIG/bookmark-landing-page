@@ -1,0 +1,86 @@
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+  border-bottom: 3px solid var(--Soft-Red);
+  color: var(--Soft-Red);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: -5%;
+  background-color: #f9f9f9;
+  /* min-width: 50vw; */
+  width: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+c .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.simple_bookmarking article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.simple_bookmarking article img {
+  display: block;
+  width: 50%;
+  object-fit: cover;
+}
+.simple_bookmarking article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.simple_bookmarking li > button {
+  background: transparent;
+  text-transform: lowercase;
+  border: none;
+}
+.simple_bookmarking article div h3 {
+  width: 60%;
+  font-size: 1.15rem;
+}
+.simple_bookmarking article div p {
+  width: 60%;
+  font-size: 0.65rem;
+}
+.simple_bookmarking article div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 40%;
+}

@@ -1,8 +1,10 @@
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   header {
+    padding: 0px;
+  }
+  .navbar {
     padding: 10px;
   }
-
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -73,10 +75,10 @@
   }
 
   .blue_bar_right {
-    width: 500px;
-    height: 300px;
+    width: 250px;
+    height: 150px;
     right: 0;
-    top: 18%;
+    top: 15%;
   }
   .sub_simple_bookmark {
     display: flex;
@@ -84,12 +86,26 @@
     text-align: center;
     padding: 10px;
   }
-  .simple_bookmark p {
-    width: 50%;
+  .sub_simple_bookmark div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .btn_chrome,
+  .btn_firefox {
+    width: 120px;
   }
 
+  .simple_bookmark p {
+    width: 90%;
+  }
+  .simple_bookmark h1 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
   .features p {
-    width: 50%;
+    width: 90%;
   }
   .simple_bookmarking li {
     border-top: 1px solid var(--Grayish-Blue);
@@ -98,6 +114,8 @@
     text-align: center;
   }
   .bookmark_click img {
+    display: block;
+    width: 100%;
     padding: 0 50px;
   }
   .simple_bookmarking {
@@ -117,32 +135,69 @@
     padding-left: 10px;
   }
   .blue_bar_left {
-    width: 500px;
-    height: 200px;
-    top: 35%;
+    width: 230px;
+    height: 100px;
+    top: 15%;
   }
   .sub_bookmark_click p {
-    width: 52%;
+    width: 80%;
+    font-size: 0.7rem;
   }
+
   .sub_bookmark_click {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 0;
+    padding: 30px 0;
   }
   .download_extension {
     padding: 50px 0;
   }
+  .download_extension p {
+    width: 78%;
+    font-size: 0.7rem;
+  }
   .web_browsers {
     display: grid;
-    grid-template-columns: 60%;
+    grid-template-columns: 95%;
+    gap: 0rem;
   }
-  .stay_up_to_date h2 {
+  .web_browsers article:nth-child(3) {
+    margin-top: 4rem;
+  }
+  .web_browsers article {
+    border: 0.5px solid var(--Grayish-Blue);
+  }
+  .faq_container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .faq_container p {
+    width: 90%;
+  }
+  .faqContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .faq_accordion {
     width: 80%;
   }
+
+  .stay_up_to_date h2 {
+    width: 80%;
+    font-size: 1.15rem;
+  }
+  .stay_up_to_date p {
+    width: 80%;
+    font-size: 0.5rem;
+    text-align: center;
+  }
   .stay_up_to_date form {
-    width: 100%;
+    width: 90%;
     display: grid;
     gap: 1rem;
   }
