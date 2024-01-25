@@ -96,3 +96,19 @@ c .dropdown-content a:hover {
   cursor: pointer;
   color: #fff;
 }
+
+@media (max-width: 600px) {
+  .dropdown-content {
+    width: 80%;
+  }
+  .simple_bookmarking article div p {
+    width: 100%;
+  }
+  .simple_bookmarking article div h3 {
+    width: 100%;
+  }
+
+  .simple_bookmarking article div button {
+    width: 80%;
+  }
+}
